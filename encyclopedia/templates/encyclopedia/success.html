@@ -5,15 +5,8 @@
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
-
-    <ul>
-        {% for entry in entries %}
-            <li>
-                <a href="{% url 'show' entry %}">{{ entry }}</a>
-            </li>
-        {% endfor %}
-    </ul>
+    <h1>Edit entry success.</h1>
+    {{ entries | safe }}
 
     <div class="d1"></div>
     <style>
@@ -22,6 +15,5 @@
             height: 10px;
             background-color: white;
         }
-
     </style>
 {% endblock %}

@@ -1,0 +1,50 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    {{ name }}
+    {{ entry }}
+    <h1>Edit the entry.</h1>
+    {% csrf_token %}
+    <form action="{% url 'save_entry' %}" method="get">
+        <p>
+            <b>Please input the name of entry:</b>
+        </p>
+        <p>
+            <input type="text" name="title" placeholder="Enter Entry" value="{{ name }}">
+        </p>
+
+        <p>
+            <b>Please input the description of entry:</b>
+        </p>
+        <p>
+            <textarea class="inputbox" name="content" rows="2" cols="3" placeholder="Entry Description">{{ entry | safe}}</textarea>
+        </p>
+        <p>
+            <button class="save_button" type="submit">Edit Confirm</button>
+        </p>
+
+    </form>
+
+    <div class="d1"></div>
+    <style>
+        .d1 {
+            width: 2000px;
+            height: 10px;
+            background-color: white;
+        }
+        /*.confirm_button{*/
+        /*    height: 30px;*/
+        /*    width : 150px;*/
+        /*}*/
+
+        .save_button{
+            height: 30px;
+            width : 200px;
+            /*border-radius:10px;*/
+        }
+    </style>
+{% endblock %}

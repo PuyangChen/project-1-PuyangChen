@@ -5,16 +5,13 @@
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
-
-    <ul>
-        {% for entry in entries %}
-            <li>
-                <a href="{% url 'show' entry %}">{{ entry }}</a>
-            </li>
-        {% endfor %}
-    </ul>
-
+    <h1>Sorry! No Matching Result.</h1>
+    <p>
+        There is no matching entry in the database.
+    </p>
+    <p>
+        You can create a new entry.
+    </p>
     <div class="d1"></div>
     <style>
         .d1 {
@@ -22,6 +19,5 @@
             height: 10px;
             background-color: white;
         }
-
     </style>
 {% endblock %}

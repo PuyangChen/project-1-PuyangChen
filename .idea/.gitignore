@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../project-1-PuyangChen\.idea/codestream.xml
+# Datasource local storage ignored files
+/../../../../../../../:\Users\Geniu\Desktop\Web\project-1-PuyangChen\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

@@ -36,3 +36,25 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+.inputbox{
+    height: 200px;
+    width : 60%;
+}
+
+.confirm_button{
+    height: 30px;
+    width : 150px;
+}
+
+.save_button{
+    height: 30px;
+    width : 200px;
+    /*border:red 2px solid;*/
+}
+
+.d1{
+    width: 1800px;
+    height: 10px;
+    background-color: white;
+}
